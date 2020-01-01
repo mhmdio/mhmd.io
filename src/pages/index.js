@@ -12,8 +12,18 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Home"
-          keywords={[`blog`, `mohammed`, `yahya`, `almusaddar`, `website`]}
+          title="LZ"
+          keywords={[
+            `blog`,
+            `mohammed`,
+            `yahya`,
+            `almusaddar`,
+            `website`,
+            `terraform`,
+            `ansible`,
+            `vault`,
+            `pulumi`,
+          ]}
         />
         {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
         <h1>
@@ -25,7 +35,7 @@ class IndexPage extends React.Component {
         <p>I’m Mohammed Yahya, from Gaza, Palestine.</p>
         <p>
           I’m working on Developing Cloud Solutions and Automation Projects
-          using Terraform, Ansible and other Open Source tools.
+          using Pulumi, Terraform, Vault, Ansible and other Open Source tools.
         </p>
         <Link to="/blog/">
           <Button marginTop="10px">Go to Blog</Button>

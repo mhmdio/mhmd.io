@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Kyle Matthews`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `MYM`,
+    author: `Mohammed Yahya`,
+    description: `MYM personal blog with styled components, dark mode, and Netlify CMS.`,
+    siteUrl: `https://mhmd.io`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mhmd_io`,
     },
   },
   plugins: [
@@ -17,6 +17,20 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/services`,
+        name: `services`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/images`,
+        name: `images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -84,6 +98,12 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `mhmdio`,
       },
     },
   ],
