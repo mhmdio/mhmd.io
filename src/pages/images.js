@@ -9,6 +9,6 @@ export default () => (
   //       title="Services"
   //       keywords={[`Services`, `mohammed`, `yahya`, `almusaddar`]}
   //     />
-  <p>Services</p>
+  <p>Images</p>
   //   </Layout>
 )
