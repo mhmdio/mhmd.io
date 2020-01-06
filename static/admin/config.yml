@@ -1,5 +1,6 @@
 backend:
-  name: mhmdio/mhmd.io
+  name: github
+  repo: mhmdio/mhmd.io
 
 media_folder: static/assets
 public_folder: assets
