@@ -38,7 +38,7 @@ function Bio() {
               Palestine building Cloud things.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Follow him on Twitter
               </a>
             </p>
           </Container>
