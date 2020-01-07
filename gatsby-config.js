@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `MYM`,
     author: `Mohammed Yahya`,
-    description: `MYM personal blog with styled components, dark mode, and Netlify CMS.`,
+    description: `MYM personal blog with Gatsby and Netlify CMS.`,
     siteUrl: `https://mhmd.io`,
     social: {
       twitter: `mhmd_io`,
