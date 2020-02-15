@@ -5,12 +5,20 @@ module.exports = {
     author: `Mohammed Yahya`,
     description: `MYM personal blog with Gatsby and Netlify CMS.`,
     siteUrl: `https://mhmd.io`,
+    twitter: `mhmd_io`,
     social: {
       twitter: `mhmd_io`,
     },
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-theme-gallery`,
+      options: {
+        galleryPath: `${__dirname}/content/gallery`,
+        basePath: `/gallery`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -63,8 +71,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-73053666-1`,
       },
     },
     {

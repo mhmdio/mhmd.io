@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "mhmd.io 🚀"
+    const siteTitle = "MYM🚀"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -32,7 +32,10 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
-        <p>I’m Mohammed Yahya, from Gaza, Palestine.</p>
+        <p>
+          I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
+          Palestine.
+        </p>
         <p>
           I’m working on Developing Cloud Solutions and Automation Projects
           using Pulumi, Terraform, Vault, Ansible and other Open Source tools.
@@ -64,12 +67,11 @@ class IndexPage extends React.Component {
             <Button marginTop="10px">ACG Academic Transcript</Button>
           </a>
         </p>
-        {/* <Link to="/images/">
-          <Button marginTop="10px">Go to Images</Button>
-        </Link>
-        <Link to="/services/">
-          <Button marginTop="10px">Go to Services</Button>
-        </Link> */}
+        <p>
+          <a href="https://www.upwork.com/fl/mhmdio">
+            <Button marginTop="10px">Hire me on UpWork</Button>
+          </a>
+        </p>
       </Layout>
     )
   }
