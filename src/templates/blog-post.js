@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import { Disqus, CommentCount } from "gatsby-plugin-disqus"
+
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -12,6 +14,21 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const DisqusTemplate = () => {
+      let disqusConfig = {
+        url: post.slug,
+        identifier: post.id,
+        title: post.title,
+      }
+      return (
+        <>
+          <h1>{post.title}</h1>
+          <CommentCount config={disqusConfig} placeholder={"..."} />
+
+          <Disqus config={disqusConfig} />
+        </>
+      )
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -37,7 +54,6 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-
         <ul
           style={{
             display: `flex`,
@@ -62,6 +78,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <DisqusTemplate />
       </Layout>
     )
   }
@@ -75,6 +92,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {

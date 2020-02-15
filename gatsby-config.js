@@ -1,30 +1,23 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `MYM`,
     author: `Mohammed Yahya`,
-    description: `MYM personal blog with Gatsby and Netlify CMS.`,
+    description: `Mohammed Yahya Website's.`,
     siteUrl: `https://mhmd.io`,
     twitter: `mhmd_io`,
     social: {
       twitter: `mhmd_io`,
+      url: `test`,
+      name: `test`,
     },
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: `gatsby-theme-gallery`,
-      options: {
-        galleryPath: `${__dirname}/content/gallery`,
-        basePath: `/gallery`,
-      },
-    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
