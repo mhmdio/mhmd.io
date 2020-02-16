@@ -6,7 +6,7 @@ description: When Applying Terraform, it will be faster.
 
 There are simple Terraform provider flags you can add, which in development, will make planning, applying or destroying faster.
 
-```HCL
+```terraform
 provider "aws" {
   region  = "eu-central-1"
   profile = "cloudfalcon-dev"
