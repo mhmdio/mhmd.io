@@ -13,7 +13,7 @@ const ButtonWrapper = styled.button`
   text-decoration: none;
   padding: 10px 25px;
   cursor: pointer;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 2px;
 
   background: ${props => props.props.background || "black"};

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MYM`,
+    title: `MYM 🚀`,
     author: `Mohammed Yahya`,
     description: `Mohammed Yahya Website.`,
     siteUrl: `https://mhmd.io`,
@@ -10,6 +10,16 @@ module.exports = {
       url: `test`,
       name: `test`,
     },
+    menuLinks: [
+      {
+        name: "LZ",
+        link: "/",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
