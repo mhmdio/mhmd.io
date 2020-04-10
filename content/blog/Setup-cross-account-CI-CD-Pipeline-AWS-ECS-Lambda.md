@@ -24,7 +24,7 @@ One note to mention that we are avoiding hard coded secrets values and use AWS S
 
 # Diagram
 
-![alt text](./codepipeline.png)
+![alt text](./03-2020/codepipeline.png)
 
 # ECS Service CI/CD pipeline using CodePipeline
 
@@ -44,7 +44,7 @@ Same approach will be followed for ECR, we will update it's resource based polic
 
 In Shared Service account update ECR Policy to allow access from dev, qa and prod accounts.
 
-```terraform
+```hcl
 variable "ecr_policy_identifiers" {
   description = "The policy identifiers for ECR policy."
   type        = list(string)
@@ -79,7 +79,7 @@ resource "aws_ecr_repository_policy" "this" {
 
 In Shared Service account update KMS Policy to allow access from dev, qa and prod accounts.
 
-```terraform
+```hcl
 variable "kms_policy_identifiers" {
   description = "The policy identifiers for kms policy."
   type        = list(string)
@@ -113,7 +113,7 @@ resource "aws_kms_key" "this" {
 
 In Shared Service account update S3 Policy to allow access from dev, qa and prod accounts, and make sure you are using the CMK KMS key you created with S3 bucket.
 
-```terraform
+```hcl
 
 variable "s3_policy_identifiers" {
   description = "The policy identifiers for s3 policy."
@@ -158,7 +158,7 @@ After we setup our resource based policies for S3, KMS and ECR, we need to allow
 
 You need to create cross account role in dev, qa and prod, and you need to add a policy to allow CodePipeline role to assume these roles.
 
-```terraform
+```hcl
 principal_arns = ["arn:aws:iam::SVC_ACCOUNT_ID:root"]
 
 data "aws_iam_policy_document" "assume" {
@@ -179,7 +179,7 @@ data "aws_iam_policy_document" "assume" {
 
 After that you can use these roles with CodePipeline in Shared Service account.
 
-```terraform
+```hcl
   stage {
     name = "Deploy-qa"
 
@@ -203,7 +203,7 @@ After that you can use these roles with CodePipeline in Shared Service account.
 
 ### Success Run for ECS CI/CD pipeline
 
-![alt text](./ecs.png)
+![alt text](./03-2020/ecs.png)
 
 # Lambda functions CI/CD pipeline using CodePipeline and CodeBuild.
 
@@ -247,4 +247,4 @@ When run this CodeBuild within CodePipeline, you can test, package, publish vers
 
 ## Success Run for Lambda CI/CD pipeline
 
-![alt text](./lambda.png)
+![alt text](./03-2020/lambda.png)

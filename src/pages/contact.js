@@ -19,6 +19,28 @@ class Contact extends React.Component {
         {/* <Link to="/">
           <Button marginTop="85px">Go Home</Button>
         </Link> */}
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+          <p>
+            <label>
+              Name <input type="text" name="name" id="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Email <input type="email" name="email" id="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Subject <input type="text" name="subject" id="subject" />
+            </label>
+          </p>
+          <p>
+            <textarea name="message" id="message" rows="5" />
+          </p>
+          <button type="submit">Send </button>
+          <input type="reset" value="Clear" />
+        </form>
       </Layout>
     )
   }
