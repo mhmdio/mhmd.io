@@ -15,10 +15,10 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Link to="/">
+        {/* <Link to="/">
           <Button marginTop="5px">Go Home</Button>
-        </Link>
-        <SEO title="All posts" />
+        </Link> */}
+        <SEO title="Blog" />
         {/* <Bio /> */}
 
         <div style={{ margin: "20px 0 40px" }}>

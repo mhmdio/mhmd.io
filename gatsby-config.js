@@ -10,16 +10,6 @@ module.exports = {
       url: `test`,
       name: `test`,
     },
-    menuLinks: [
-      {
-        name: "LZ",
-        link: "/",
-      },
-      {
-        name: "Blog",
-        link: "/blog",
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -169,7 +159,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/start-up.png`,
       },
     },
     {
@@ -181,7 +171,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `mhmdio`,
+        shortname: `mhmd9`,
       },
     },
   ],
