@@ -12,6 +12,8 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-remark-embed-video`,
+    `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
@@ -19,21 +21,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: "gatsby-theme-gallery",
-    //   options: {
-    //     basePath: "/gallery",
-    //   },
-    // },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: false,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

@@ -24,7 +24,7 @@ One note to mention that we are avoiding hard coded secrets values and use AWS S
 
 # Diagram
 
-![alt text](./03-2020/codepipeline.png)
+![alt text](./codepipeline.png)
 
 # ECS Service CI/CD pipeline using CodePipeline
 
@@ -203,7 +203,7 @@ After that you can use these roles with CodePipeline in Shared Service account.
 
 ### Success Run for ECS CI/CD pipeline
 
-![alt text](./03-2020/ecs.png)
+![alt text](./ecs.png)
 
 # Lambda functions CI/CD pipeline using CodePipeline and CodeBuild.
 
@@ -247,4 +247,4 @@ When run this CodeBuild within CodePipeline, you can test, package, publish vers
 
 ## Success Run for Lambda CI/CD pipeline
 
-![alt text](./03-2020/lambda.png)
+![alt text](./lambda.png)
