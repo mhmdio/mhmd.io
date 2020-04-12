@@ -18,7 +18,24 @@ class Blog extends React.Component {
         {/* <Link to="/">
           <Button marginTop="5px">Go Home</Button>
         </Link> */}
-        <SEO title="Blog" />
+        <SEO
+          title="Blog"
+          keywords={[
+            `blog`,
+            `mohammed`,
+            `yahya`,
+            `almusaddar`,
+            `website`,
+            `terraform`,
+            `ansible`,
+            `vault`,
+            `pulumi`,
+            `aws`,
+            `macbook`,
+            `macbookpro`,
+            `setup`,
+          ]}
+        />
         {/* <Bio /> */}
 
         <div style={{ margin: "20px 0 40px" }}>

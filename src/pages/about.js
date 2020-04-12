@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
 
+import mhmd from "../../content/gallery/mhmd.png"
+
 class About extends React.Component {
   render() {
     const { data } = this.props

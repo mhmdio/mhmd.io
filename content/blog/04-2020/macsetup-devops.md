@@ -179,33 +179,53 @@ Zsh is a shell designed for interactive use, although it is also a powerful scri
 ```bash
 brew install zsh zsh-completions zsh-history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-git-prompt zsh-syntax-highlighting zsh-lovers
 ```
-
-### Zsh Plugins
-
-- zsh-completions - https://github.com/zsh-users/zsh-completions
-
-  - Additional completion definitions for Zsh.
-
-- zsh-syntax-highlighting - https://github.com/zsh-users/zsh-syntax-highlighting
-
-  - Fish shell like syntax highlighting for Zsh
-
-- zsh-history-substring-search - https://github.com/zsh-users/zsh-history-substring-search
-
-  - 🐠 ZSH port of Fish history search (up arrow)
-
-- zsh-navigation-tools - https://github.com/psprint/zsh-navigation-tools
-
-  - Curses-based tools for Zsh, e.g. multi-word history searcher
-
-- zsh-apple-touchbar - https://github.com/zsh-users/zsh-apple-touchbar
-
-  - Make your touchbar more powerful.
-
 #### Zsh Plugin Manager - Antigen
 
 - Antigen - https://github.com/zsh-users/antigen
   - The plugin manager for zsh
+
+
+### Zsh Plugins
+
+- **zsh-completions** - https://github.com/zsh-users/zsh-completions
+
+  - Additional completion definitions for Zsh.
+  
+  - [Install with Antigen](https://github.com/zsh-users/antigen):
+
+    - Add `antigen bundle zsh-users/zsh-completions` to your `~/.zshrc`.
+  
+  - [Install with oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh):
+  
+    - Clone the repository inside your oh-my-zsh repo:
+
+        ```bash
+        git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+        ```
+
+    - Enable it in your `.zshrc` by adding it to your plugin list and reloading the completion:
+  
+        ```bash
+        plugins=(… zsh-completions)
+        autoload -U compinit && compinit
+        ```
+
+- **zsh-syntax-highlighting** - https://github.com/zsh-users/zsh-syntax-highlighting
+
+  - Fish shell like syntax highlighting for Zsh
+
+- **zsh-history-substring-search** - https://github.com/zsh-users/zsh-history-substring-search
+
+  - 🐠 ZSH port of Fish history search (up arrow)
+
+- **zsh-navigation-tools** - https://github.com/psprint/zsh-navigation-tools
+
+  - Curses-based tools for Zsh, e.g. multi-word history searcher
+
+- **zsh-apple-touchbar** - https://github.com/zsh-users/zsh-apple-touchbar
+
+  - Make your touchbar more powerful.
+
 
 ## Zsh starship prompt - https://starship.rs
 
