@@ -16,21 +16,21 @@ These are personal preferences, and specific for my use case, please feel free t
 
 ## Workflow
 
-- Security
-  - Password Manager: LasstPass
-  - MFA or 2FA: Authy
-- Shell
-  - Zsh
-- Terminal
-  - Hyper
-- Editor
-  - VSCode
-- Productivity
-  - Evernote
-  - Toggl
-  - Microsoft To Do
-  - Trello
-  - Reader 3
+- **Security**
+  - Password Manager: [LastPass]
+  - MFA or 2FA: [Authy]
+- **Shell**
+  - [Zsh]
+- **Terminal**
+  - [Hyper]
+- **Editor**
+  - [VSCode]
+- **Productivity**
+  - [Evernote] & [Notion]
+  - [Toggl]
+  - [Microsoft To Do]
+  - [Trello]
+  - [Reader 3]
 
 ---
 
@@ -1043,6 +1043,16 @@ silvenon.mdx
 streetsidesoftware.code-spell-checker
 ```
 
+Create `extensions.list`, add your prefered extensions, then run the following:
+
+```bash
+cat extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+```
+
+### code-settings-sync
+
+You could use `code-settings-sync` for syncing your settings, themes, extensions, etc.. to Github.
+
 `settings.json:`
 
 ```json
@@ -1082,5 +1092,15 @@ streetsidesoftware.code-spell-checker
 - [draculatheme](https://draculatheme.com/)
 - [nordtheme](https://www.nordtheme.com/)
 - [monokai](https://monokai.pro/)
+
+---
+
+## Results
+
+![1](./1.png)
+
+![2](./2.png)
+
+![3](./3.png)
 
 ---

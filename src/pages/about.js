@@ -23,6 +23,9 @@ class About extends React.Component {
           <a href="https://twitter.com/mhmd_io">
             <Button marginTop="10px">Follow on Twitter</Button>
           </a>
+          <a href="https://www.youtube.com/channel/UCbwcohrMkjVdG2dxHPHfElw">
+            <Button marginTop="10px">Subscribe on YouTube</Button>
+          </a>
           <a href="https://www.linkedin.com/in/mhmdio">
             <Button marginTop="10px">Connect on LinkedIn</Button>
           </a>
