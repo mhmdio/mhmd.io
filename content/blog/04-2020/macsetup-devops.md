@@ -14,6 +14,13 @@ These are personal preferences, and specific for my use case, please feel free t
 
 ---
 
+## Changelog
+
+| Date       | Change         |
+| ---------- | -------------- |
+| 11-04-2020 | Original       |
+| 15-04-2020 | Add Github Cli |
+
 ## Workflow
 
 - **Security**
@@ -477,6 +484,7 @@ ssh-keygen -t rsa -b 4096 -C "mbp16 123456789@ABCDEF.xyz"
 
 ---
 
+
 ## Folder Layout
 
 ```bash
@@ -514,13 +522,24 @@ brew tap aws/tap
 brew install aws-sam-cli
 ```
 
-### Ansible
+### GitHub Cli - <https://cli.github.com>
+
+Take GitHub to the command line
+
+![gh](./gh_cli.gif)
+
+
+```bash
+brew install github/gh/gh
+```
+
+### Ansible - <https://www.ansible.com>
 
 ```bash
 brew install ansible ansible-lint
 ```
 
-### HashiCorp
+### HashiCorp - <https://www.hashicorp.com>
 
 ```bash
 brew install terraform
