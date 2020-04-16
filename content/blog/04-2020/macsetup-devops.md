@@ -16,10 +16,11 @@ These are personal preferences, and specific for my use case, please feel free t
 
 ## Changelog
 
-| Date       | Change         |
-| ---------- | -------------- |
-| 11-04-2020 | Original       |
-| 15-04-2020 | Add Github Cli |
+| Date       | Change                         |
+| ---------- | ------------------------------ |
+| 11-04-2020 | Original                       |
+| 15-04-2020 | Add Github Cli                 |
+| 16-04-2020 | Add Go, Update K8s and Cleanup |
 
 ## Workflow
 
@@ -186,36 +187,36 @@ Zsh is a shell designed for interactive use, although it is also a powerful scri
 ```bash
 brew install zsh zsh-completions zsh-history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-git-prompt zsh-syntax-highlighting zsh-lovers
 ```
+
 #### Zsh Plugin Manager - Antigen
 
 - Antigen - https://github.com/zsh-users/antigen
   - The plugin manager for zsh
-
 
 ### Zsh Plugins
 
 - **zsh-completions** - https://github.com/zsh-users/zsh-completions
 
   - Additional completion definitions for Zsh.
-  
+
   - [Install with Antigen](https://github.com/zsh-users/antigen):
 
     - Add `antigen bundle zsh-users/zsh-completions` to your `~/.zshrc`.
-  
+
   - [Install with oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh):
-  
+
     - Clone the repository inside your oh-my-zsh repo:
 
-        ```bash
-        git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
-        ```
+      ```bash
+      git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+      ```
 
     - Enable it in your `.zshrc` by adding it to your plugin list and reloading the completion:
-  
-        ```bash
-        plugins=(… zsh-completions)
-        autoload -U compinit && compinit
-        ```
+
+      ```bash
+      plugins=(… zsh-completions)
+      autoload -U compinit && compinit
+      ```
 
 - **zsh-syntax-highlighting** - https://github.com/zsh-users/zsh-syntax-highlighting
 
@@ -232,7 +233,6 @@ brew install zsh zsh-completions zsh-history-substring-search zsh-navigation-too
 - **zsh-apple-touchbar** - https://github.com/zsh-users/zsh-apple-touchbar
 
   - Make your touchbar more powerful.
-
 
 ## Zsh starship prompt - https://starship.rs
 
@@ -484,7 +484,6 @@ ssh-keygen -t rsa -b 4096 -C "mbp16 123456789@ABCDEF.xyz"
 
 ---
 
-
 ## Folder Layout
 
 ```bash
@@ -514,12 +513,49 @@ Results:
 
 ## DevOps
 
+### Node.js - <https://nodejs.org/en>
+
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+```bash
+brew install node nvm yarn
+```
+
+### Gatsby - <https://www.gatsbyjs.org/>
+
+Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.
+
+```bash
+brew install gatsby-cli
+```
+
+### Python - <https://www.python.org>
+
+```bash
+brew install python
+brew install pyenv pyenv-virtualenv
+```
+
+### Go - <https://golang.org/>
+
+```bash
+brew install go
+```
+
 ### AWS
 
 ```bash
-brew install awscli awslogs aws-shell awsume && brew cask install aws-vault
+brew install awscli awslogs aws-shell awsume
+brew cask install aws-vault
 brew tap aws/tap
 brew install aws-sam-cli
+```
+
+#### aws-amplify
+
+```bash
+npm install -g @aws-amplify/cli
+amplify configure
 ```
 
 ### GitHub Cli - <https://cli.github.com>
@@ -527,7 +563,6 @@ brew install aws-sam-cli
 Take GitHub to the command line
 
 ![gh](./gh_cli.gif)
-
 
 ```bash
 brew install github/gh/gh
@@ -560,7 +595,8 @@ brew install terraformer terragrunt terraform-docs terraform_landscape iam-polic
 Production-Grade Container Orchestration. Automated container deployment, scaling, and management
 
 ```bash
-brew install kubectl minikube
+brew install kubernetes-cli
+brew install minikube
 ```
 
 ### Docker - https://www.docker.com
@@ -577,22 +613,6 @@ VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterp
 
 ```bash
 brew cask install virtualbox
-```
-
-### Node.js - https://nodejs.org/en
-
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-
-```bash
-brew install node nvm yarn gatsby-cli
-npm install -g @aws-amplify/cli
-# amplify configure
-```
-
-### Python - https://www.python.org
-
-```bash
-brew install pyenv pyenv-virtualenv
 ```
 
 ---
