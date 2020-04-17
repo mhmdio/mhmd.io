@@ -590,7 +590,7 @@ brew install vagrant vagrant-manager
 brew install terraformer terragrunt terraform-docs terraform_landscape iam-policy-json-to-terraform tf-lint
 ```
 
-### kubernetes - https://kubernetes.io
+### kubernetes - <https://kubernetes.io>
 
 Production-Grade Container Orchestration. Automated container deployment, scaling, and management
 
@@ -599,7 +599,7 @@ brew install kubernetes-cli
 brew install minikube
 ```
 
-### Docker - https://www.docker.com
+### Docker - <https://www.docker.com>
 
 Securely build and share any application, anywhere
 
@@ -612,7 +612,7 @@ brew cask install docker
 VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 
 ```bash
-brew cask install virtualbox
+brew cask install virtualbox virtualbox-extension-pack
 ```
 
 ---

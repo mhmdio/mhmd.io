@@ -5,10 +5,10 @@ import styled from "styled-components"
 const Nav = () => (
   <nav>
     <Wrapper>
-      <a href="/">Home</a>| <a href="/blog">Blog</a> |{" "}
-      <a href="/slides">Slides</a>| <a href="/courses">Courses</a>|{" "}
-      <a href="/podcasts">Podcasts</a>| <a href="/about">About</a> |{" "}
-      <a href="/contact">Contact</a>
+      <a href="/">Home</a> | <a href="/blog">Blog</a> |{" "}
+      <a href="/about">About</a> | <a href="/podcasts">Podcasts</a> |{" "}
+      <a href="/slides">Slides</a> | <a href="/courses">Courses</a> |{" "}
+      <a href="/links">Links</a> | <a href="/contact">Contact</a>
     </Wrapper>
   </nav>
 )
