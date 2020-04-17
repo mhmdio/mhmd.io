@@ -21,6 +21,7 @@ These are personal preferences, and specific for my use case, please feel free t
 | 11-04-2020 | Original                       |
 | 15-04-2020 | Add Github Cli                 |
 | 16-04-2020 | Add Go, Update K8s and Cleanup |
+| 17-04-2020 | Add Helm                       |
 
 ## Workflow
 
@@ -597,6 +598,22 @@ Production-Grade Container Orchestration. Automated container deployment, scalin
 ```bash
 brew install kubernetes-cli
 brew install minikube
+```
+
+#### miniKube - <https://minikube.sigs.k8s.io/docs/>
+
+minikube quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows.
+
+```bash
+brew install minikube
+```
+
+#### Helm - <https://helm.sh/>
+
+The package manager for Kubernetes
+
+```bash
+brew install helm
 ```
 
 ### Docker - <https://www.docker.com>
