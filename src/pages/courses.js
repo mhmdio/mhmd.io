@@ -23,6 +23,9 @@ class About extends React.Component {
               How to Use Open Source Tools to Improve Network Security
             </Button>
           </a>
+          <a href="https://www.youtube.com/watch?v=t8hFq99XIlk&t=1730s">
+            <Button marginTop="10px">DevOps in Simple Arabic</Button>
+          </a>
         </p>
       </Layout>
     )

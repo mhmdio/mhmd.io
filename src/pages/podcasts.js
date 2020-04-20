@@ -3,7 +3,7 @@ import React from "react"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-// import Button from "../components/button"
+import Button from "../components/button"
 import SEO from "../components/seo"
 
 class Contact extends React.Component {
@@ -16,6 +16,11 @@ class Contact extends React.Component {
         <SEO title="Podcasts" />
         <Bio />
         <h2>Podcasts</h2>
+        <a href="https://soundcloud.com/hussamkurd/ep-3-devops">
+          <Button marginTop="10px">
+            What is DevOps and how to adopt it's culture
+          </Button>
+        </a>
       </Layout>
     )
   }

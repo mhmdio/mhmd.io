@@ -23,6 +23,10 @@ class About extends React.Component {
               How to Use Open Source Tools to Improve Network Security
             </Button>
           </a>
+          <h2>Google Slides:</h2>
+          <a href="https://drive.google.com/drive/folders/14q1wsSUq7eS_zJxUqpDftLPFkarNrEPR?usp=sharing">
+            <Button marginTop="10px">Freelancing Training Course</Button>
+          </a>
         </p>
       </Layout>
     )
