@@ -5,10 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's personal blog starter
+  Gatsby's personal blog starter for mhmd.io
 </h1>
 
-<img alt="screesnhot" src="./screenshot.png">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd442f25-9ae9-4676-9d0c-a88d8cdf21ff/deploy-status)](https://app.netlify.com/sites/mhmdio/deploys)
 
 This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
 
@@ -51,9 +51,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 📔 Learning Netlify CMS with Gatsby
 
 Start from [this point](https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/#authenticating-with-github) in the Gatsby documentation to finish the set up for your personal Netlify CMS with authentication.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/gatsby-personal-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
