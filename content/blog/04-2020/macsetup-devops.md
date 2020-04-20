@@ -22,6 +22,7 @@ These are personal preferences, and specific for my use case, please feel free t
 | 15-04-2020 | Add Github Cli                 |
 | 16-04-2020 | Add Go, Update K8s and Cleanup |
 | 17-04-2020 | Add Helm                       |
+| 20-04-2020 | Add aws-vault                  |
 
 ## Workflow
 
@@ -547,9 +548,16 @@ brew install go
 
 ```bash
 brew install awscli awslogs aws-shell awsume
-brew cask install aws-vault
 brew tap aws/tap
 brew install aws-sam-cli
+```
+
+#### aws-vault - <https://github.com/99designs/aws-vault>
+
+AWS Vault is a tool to securely store and access AWS credentials in a development environment.
+
+```bash
+brew cask install aws-vault
 ```
 
 #### aws-amplify
