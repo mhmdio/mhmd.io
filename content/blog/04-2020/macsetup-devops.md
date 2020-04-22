@@ -23,6 +23,7 @@ These are personal preferences, and specific for my use case, please feel free t
 | 16-04-2020 | Add Go, Update K8s and Cleanup |
 | 17-04-2020 | Add Helm                       |
 | 20-04-2020 | Add aws-vault                  |
+| 20-04-2020 | Add keka & unrar               |
 
 ## Workflow
 
@@ -455,6 +456,9 @@ brew cask install font-hack-nerd-font font-hack-nerd-font-mono font-firacode-ner
 
 ```bash
 brew install bash make curl asdf tree jq bat gcal htop youtube-dl unzip speedtest-cli neovim exa graphviz pv fdupes wget glances
+# file archiver
+brew install unrar
+brew cask install keka
 # extra
 # brew install tig wget lynx httpie xz tmate tldr thefuck lastpass-cli
 ```
