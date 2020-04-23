@@ -23,7 +23,8 @@ These are personal preferences, and specific for my use case, please feel free t
 | 16-04-2020 | Add Go, Update K8s and Cleanup |
 | 17-04-2020 | Add Helm                       |
 | 20-04-2020 | Add aws-vault                  |
-| 20-04-2020 | Add keka & unrar               |
+| 22-04-2020 | Add keka & unrar               |
+| 23-04-2020 | Add .terraformrc               |
 
 ## Workflow
 
@@ -597,10 +598,27 @@ brew install vault
 brew install vagrant vagrant-manager
 ```
 
-### Terraform Addons
+#### Terraform Addons
 
 ```bash
 brew install terraformer terragrunt terraform-docs terraform_landscape iam-policy-json-to-terraform tf-lint
+```
+
+#### .terraformrc
+
+Terraform CLI Configuration File
+
+```bash
+cat > ~/.terraformrc <<EOF
+plugin_cache_dir   = "$HOME/.terraform.d/plugin-cache"
+disable_checkpoint = true
+disable_checkpoint_signature = true
+
+credentials "app.terraform.io" {
+    token = "XXXXXXXXXX.atlasv1.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+}
+
+EOF
 ```
 
 ### kubernetes - <https://kubernetes.io>
