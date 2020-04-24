@@ -25,6 +25,7 @@ These are personal preferences, and specific for my use case, please feel free t
 | 20-04-2020 | Add aws-vault                  |
 | 22-04-2020 | Add keka & unrar               |
 | 23-04-2020 | Add .terraformrc               |
+| 23-04-2020 | Add .vimrcx                    |
 
 ## Workflow
 
@@ -465,6 +466,15 @@ brew cask install keka
 ```
 
 ---
+
+## VIMRC - <https://github.com/amix/vimrc>
+
+The Ultimate vimrc
+
+```bash
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
 
 ## Git - https://git-scm.com
 
