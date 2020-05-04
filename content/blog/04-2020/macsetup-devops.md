@@ -26,6 +26,7 @@ These are personal preferences, and specific for my use case, please feel free t
 | 22-04-2020 | Add keka & unrar               |
 | 23-04-2020 | Add .terraformrc               |
 | 23-04-2020 | Add .vimrcx                    |
+| 05-05-2020 | Add fd, ripgrep, procs         |
 
 ## Workflow
 
@@ -474,6 +475,32 @@ The Ultimate vimrc
 ```bash
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
+
+### Modern Replacements
+
+#### fd - <https://github.com/sharkdp/fd>
+
+A simple, fast and user-friendly alternative to 'find'
+
+```bash
+brew install fd
+```
+
+#### ripgrep - <https://github.com/BurntSushi/ripgrep>
+
+ripgrep recursively searches directories for a regex pattern
+
+```bash
+brew install ripgrep
+```
+
+#### procs - <https://github.com/dalance/procs>
+
+A modern replacement for ps written in Rust
+
+```bash
+brew install procs
 ```
 
 ## Git - https://git-scm.com
