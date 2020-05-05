@@ -56,15 +56,15 @@ Terraform code snippets (>3400) straight from documentation for all provider res
 
 ---
 
-## 3. Terraform Autocomplete
+## 3. Project Manager
 
-Autocomplete for AWS resources with terraform.
+Easily switch between projects
 
-- **[Install](vscode:extension/erd0s.terraform-autocomplete)**
-- **[Marketplace Link](https://marketplace.visualstudio.com/items?itemName=run-at-scale.terraform-doc-snippets)**
-- **Publisher**: erd0s
+- **[Install](vscode:extension/alefragnani.project-manager)**
+- **[Marketplace Link](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)**
+- **Publisher**: Alessandro Fragnani
 
-![demo](https://github.com/erd0s/terraform-autocomplete/raw/master/docs/1.gif)
+![demo](https://github.com/alefragnani/vscode-project-manager/raw/master/images/vscode-project-manager-side-bar.gif)
 
 ---
 
