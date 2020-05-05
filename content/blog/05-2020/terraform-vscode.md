@@ -6,7 +6,7 @@ description: Make your Terraform DevOps more productive.
 
 ![vscode-terraform](./vscode-terraform.png)
 
-VScode has become on of the popular Text editor now days, and one of the primary tools for DevOps Engineers to develop their solutions and tasks. Using Terraform with VScode can be productive and useful when you check the following 15 VScode extensions to supercharged your Terraform Development.
+VSCode has become one of the popular Text editor now days, and one of the primary tools for DevOps Engineers to develop their solutions and running tasks. Using Terraform with VSCode can be productive and useful when you check the following 15 VSCode extensions to supercharged your Terraform Development.
 
 ## Notes
 
