@@ -16,17 +16,17 @@ These are personal preferences, and specific for my use case, please feel free t
 
 ## Changelog
 
-| Date       | Change                         |
-| ---------- | ------------------------------ |
-| 11-04-2020 | Original                       |
-| 15-04-2020 | Add Github Cli                 |
-| 16-04-2020 | Add Go, Update K8s and Cleanup |
-| 17-04-2020 | Add Helm                       |
-| 20-04-2020 | Add aws-vault                  |
-| 22-04-2020 | Add keka & unrar               |
-| 23-04-2020 | Add .terraformrc               |
-| 23-04-2020 | Add .vimrcx                    |
-| 05-05-2020 | Add fd, ripgrep, procs         |
+| Date       | Change                                          |
+| ---------- | ----------------------------------------------- |
+| 11-04-2020 | Original                                        |
+| 15-04-2020 | Add Github Cli                                  |
+| 16-04-2020 | Add Go, Update K8s and Cleanup                  |
+| 17-04-2020 | Add Helm                                        |
+| 20-04-2020 | Add aws-vault                                   |
+| 22-04-2020 | Add keka & unrar                                |
+| 23-04-2020 | Add .terraformrc                                |
+| 23-04-2020 | Add .vimrcx                                     |
+| 05-05-2020 | Add fd, ripgrep, procs, VSCode DevOps Extension |
 
 ## Workflow
 
@@ -1227,6 +1227,39 @@ You could use `code-settings-sync` for syncing your settings, themes, extensions
   "editor.formatOnSave": true
 }
 ```
+
+### DevOps Extension Pack
+
+Adds language support for Go, HCL (HashiCorp Configuration Language), JSON, Jsonnet, Markdown, Ruby, XML and YAML. Integrates with tools like Chef, Docker, Git, GitHub, Gradle, Kubernetes, Logstash, NGINX, Puppet, and Terraform
+
+- **[Install](vscode:extension/d4nyll.devops-extension-pack)**
+- **[Marketplace Link](https://marketplace.visualstudio.com/items?itemName=d4nyll.devops-extension-pack)**
+- **Publisher**: Daniel Li
+
+This extension pack adds basic language support for:
+
+- Go
+- HashiCorp Configuration Language (HCL)
+- JSON
+- Jsonnet
+- Markdown
+- Ruby
+- XML
+- YAML
+
+It provides basic integrations with tools like:
+
+- Ansible
+- Chef
+- Docker
+- Git
+- GitHub
+- Gradle
+- Kubernetes
+- Logstash
+- NGINX
+- Puppet
+- Terraform
 
 ---
 
