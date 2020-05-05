@@ -1,5 +1,5 @@
 ---
-title: 15 VS Code extensions for Terraform Development
+title: 15 VSCode extensions for better Terraform Development
 date: 2020-05-05
 description: Make your Terraform DevOps more productive.
 ---
@@ -10,7 +10,7 @@ VScode has become on of the popular Text editor now days, and one of the primary
 
 ## Notes
 
-- If you are new to DevOps and want to setup your macos with super powers for DevOps tasks, check my blog post [MacBookPro Setup for DevOps](https://mhmd.io/blog/04-2020/macsetup-devops/), also you can find VSCode section.
+- If you are new to DevOps and want to setup your MacOS with super powers for DevOps tasks, check my blog post [MacBookPro Setup for DevOps](https://mhmd.io/blog/04-2020/macsetup-devops/), also you can find VSCode section.
 
 - You can use the same approach from AWS Cloud9 IDE, check how to connect VSCode to AWS Cloud 9, and install Terraform in my blog post [How to access AWS Cloud9 IDE from VSCode?](https://mhmd.io/blog/04-2020/cloud9-vscode/)
 
@@ -28,9 +28,13 @@ VScode has become on of the popular Text editor now days, and one of the primary
 
 ---
 
+## Demo
+
+![demo](./vscode1.gif)
+
 ## 1. Terraform
 
-Syntax highlighting, linting, formatting, and validation for Hashicorp's Terraform
+Syntax highlighting, linting, formatting, and validation for HashiCorp's Terraform
 
 - **[Install](vscode:extension/mauve.terraform)**
 - **[Marketplace Link](https://marketplace.visualstudio.com/items?itemName=mauve.terraform)**
