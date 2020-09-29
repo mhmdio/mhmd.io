@@ -17,6 +17,12 @@ class About extends React.Component {
 
         <Bio />
         <p>
+          <h2>SpeakerDeck:</h2>
+          <a href="https://speakerdeck.com/mhmdio/terraform-cicd-best-practices">
+            <Button marginTop="10px">
+              Terraform CICD Best Practices using AWS Developer tools.
+            </Button>
+          </a>
           <h2>SlideShare:</h2>
           <a href="https://www.slideshare.net/MohammedAlmusaddar/how-to-use-open-source-tools-to-improve-network-security">
             <Button marginTop="10px">
