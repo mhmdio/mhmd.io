@@ -17,6 +17,9 @@ class About extends React.Component {
 
         <Bio />
         <p>
+          <a href="https://www.youracclaim.com/users/mohammed-almusaddar/badges">
+            <Button marginTop="10px">Acclaim Badges/Certs</Button>
+          </a>
           <a href="https://github.com/mhmdio">
             <Button marginTop="10px">Fork on Github</Button>
           </a>
