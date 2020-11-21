@@ -17,7 +17,17 @@ class About extends React.Component {
 
         <Bio />
         <p>
-          <h2>YouTube:</h2>
+          <h2>Paid on Upwork:</h2>
+          <a href="https://www.upwork.com/services/my-list/1323160849474355200">
+            <Button marginTop="10px">
+            You will get 5 hours of Terraform Training on AWS
+            </Button>
+          </a>
+          Note: You need to have Upwork account.
+
+        </p>
+        <p>
+          <h2>Free on YouTube:</h2>
           <a href="https://www.youtube.com/watch?v=cju7bDO_-i0">
             <Button marginTop="10px">
               How to Use Open Source Tools to Improve Network Security
