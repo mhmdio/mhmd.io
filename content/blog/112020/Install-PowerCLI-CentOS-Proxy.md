@@ -10,6 +10,12 @@ In this article I will show you **How to Install PowerCLI on CentOS**, with Some
 
 **VMware PowerCLI** is a command-line and scripting tool built on Windows PowerShell, and provides more than 700 **cmdlets** for managing and automating vSphere, VMware Cloud Director, vRealize Operations Manager, vSAN, NSX-T, VMware Cloud Services, VMware Cloud on AWS, VMware HCX, VMware Site Recovery Manager, and VMware Horizon environments.
 
+## Tested on
+
+| OS         | Version |
+| ---------- | ------- |
+| CentOS     | 7       |
+
 ## Export proxy settings
 
 ```bash
