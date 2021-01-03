@@ -1,10 +1,8 @@
 import React from "react"
-// import { Link } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 
 class Links extends React.Component {
   render() {
@@ -14,8 +12,6 @@ class Links extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Links" />
-
-        <Bio />
         <p>
           <h2>Recommended Books:</h2>
           <a href="https://itrevolution.com/book/the-phoenix-project/">

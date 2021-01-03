@@ -1,10 +1,8 @@
 import React from "react"
-// import { Link } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 
 class Contact extends React.Component {
   render() {
@@ -14,7 +12,6 @@ class Contact extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Podcasts" />
-        <Bio />
         <h2>Podcasts</h2>
         <a href="https://soundcloud.com/hussamkurd/ep-3-devops">
           <Button marginTop="10px">

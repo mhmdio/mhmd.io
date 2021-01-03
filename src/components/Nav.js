@@ -9,6 +9,7 @@ const Nav = () => (
       <a href="/about">About</a> | <a href="/podcasts">Podcasts</a> |{" "}
       <a href="/workshops">Workshops</a> | <a href="/slides">Slides</a> |{" "}
       <a href="/courses">Courses</a> | <a href="/links">Links</a> |{" "}
+      <a href="/services">Services</a> |{" "}
       <a href="/contact">Contact</a>
     </Wrapper>
   </nav>
@@ -16,7 +17,7 @@ const Nav = () => (
 
 export default Nav
 
-const Wrapper = styled.h3`
+const Wrapper = styled.h4`
   text-decoration: none;
   &:focus,
   &:hover,

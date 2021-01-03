@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MYM 🚀`,
+    title: `mhmd.io`,
     author: `Mohammed Yahya`,
     description: `Mohammed Yahya Website.`,
     siteUrl: `https://mhmd.io`,

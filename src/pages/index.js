@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from "../components/bio"
 
 class IndexPage extends React.Component {
   render() {
@@ -23,18 +24,7 @@ class IndexPage extends React.Component {
             `pulumi`,
           ]}
         />
-        <h1>
-          Salam people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>
-          I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
-          Palestine. I’m working on Developing Cloud Solutions and Automation
-          Projects using Pulumi, Terraform, Vault, Ansible and other Open Source
-          tools.
-        </p>
+        <Bio />
         <img
           style={{ margin: 0 }}
           src="./devops-toolchain.svg"

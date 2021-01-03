@@ -1,10 +1,8 @@
 import React from "react"
-// import { Link } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 
 class About extends React.Component {
   render() {
@@ -14,8 +12,6 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Courses" />
-
-        <Bio />
         <p>
           <h2>Paid on Upwork:</h2>
           <a href="https://www.upwork.com/services/my-list/1323160849474355200">

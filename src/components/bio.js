@@ -26,18 +26,24 @@ function Bio() {
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
-                marginBottom: 0,
+                marginBottom: 50,
                 minWidth: 50,
-                borderRadius: `100%`,
+                borderRadius: `10%`,
               }}
               imgStyle={{
-                borderRadius: `50%`,
+                borderRadius: `10%`,
               }}
             />
-            <p>
-              I'm <strong>{author}</strong> and I lives and works in Gaza,
-              Palestine, most of the time building Cloud things.
-            </p>
+
+        <p>
+          <h1>
+            Salam people{" "}
+          </h1>
+          👋 I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
+          Palestine. I’m working on Developing Cloud Solutions and Automation
+          Projects using Pulumi, Terraform, Vault, Ansible and other Open Source
+          tools.
+        </p>
           </Container>
         )
       }}
@@ -47,7 +53,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/mym.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
