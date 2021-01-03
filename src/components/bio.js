@@ -33,12 +33,11 @@ function Bio() {
               imgStyle={{
                 borderRadius: `10%`,
               }}
-            />            
-            👋 Salam people, I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
-            Palestine. I’m working on Developing Cloud Solutions and
+            />
+            👋 Salam people, I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر],
+            from Gaza, Palestine. I’m working on Developing Cloud Solutions and
             Automation Projects using Pulumi, Terraform, Vault, Ansible and
             other Open Source tools.
-
           </Container>
         )
       }}

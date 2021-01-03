@@ -80,10 +80,9 @@ class Layout extends React.Component {
             marginRight: `auto`,
             maxWidth: rhythm(29),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            backgroundColor: 'var(--bg)',
-            color: 'var(--textNormal)',
-            transition: 'color 0.2s ease-out, background 0.2s ease-out',
-       
+            backgroundColor: "var(--bg)",
+            color: "var(--textNormal)",
+            transition: "color 0.2s ease-out, background 0.2s ease-out",
           }}
         >
           <header>{header}</header>
@@ -96,10 +95,9 @@ class Layout extends React.Component {
             marginRight: `auto`,
             maxWidth: rhythm(29),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            backgroundColor: 'var(--bg)',
-            color: 'var(--textNormal)',
-            transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        
+            backgroundColor: "var(--bg)",
+            color: "var(--textNormal)",
+            transition: "color 0.2s ease-out, background 0.2s ease-out",
           }}
         >
           © 2015 - {new Date().getFullYear()}, Built with

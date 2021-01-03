@@ -10,8 +10,8 @@ const Nav = () => (
       <a href="/about">About</a> | <a href="/podcasts">Podcasts</a> |{" "}
       <a href="/workshops">Workshops</a> | <a href="/slides">Slides</a> |{" "}
       <a href="/courses">Courses</a> | <a href="/links">Links</a> |{" "}
-      <a href="/services">Services</a> | <a href="/contact">Contact</a> 
-       |{" "}<Switch />
+      <a href="/services">Services</a> | <a href="/contact">Contact</a>|{" "}
+      <Switch />
     </Wrapper>
   </nav>
 )

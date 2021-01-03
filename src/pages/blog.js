@@ -13,9 +13,6 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        {/* <Link to="/">
-          <Button marginTop="5px">Go Home</Button>
-        </Link> */}
         <SEO
           title="Blog"
           keywords={[
@@ -34,8 +31,6 @@ class Blog extends React.Component {
             `setup`,
           ]}
         />
-        {/* <Bio /> */}
-
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
@@ -48,7 +43,7 @@ class Blog extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
+                    to={`/blog${node.fields.slug}`}
                   >
                     {title}
                   </Link>

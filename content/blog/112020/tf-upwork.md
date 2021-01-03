@@ -14,11 +14,11 @@ You will get 5 hours of Terraform Training on AWS, you will learn how to deploy 
    - What you need to know to get started.
 1. Terraform Cloud Setup
    - SaaS free Pipeline for Terraform from HashiCorp
-2. Network Stack
+1. Network Stack
    - VPC Best practices
-3. Data Stack
+1. Data Stack
    - RDS Best Practices.
-4. App Stack
+1. App Stack
    - ECS Microservice App on AWS Fargate.
 
 https://www.upwork.com/fl/mhmdio

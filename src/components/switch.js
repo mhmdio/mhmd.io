@@ -1,5 +1,5 @@
-import React from 'react'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import React from "react"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 class Switch extends React.Component {
   render() {
@@ -9,9 +9,9 @@ class Switch extends React.Component {
           <label>
             <input
               type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-              checked={theme === 'dark'}
-            />{' '}
+              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              checked={theme === "dark"}
+            />{" "}
             Dark
           </label>
         )}
