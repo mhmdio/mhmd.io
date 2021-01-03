@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 class About extends React.Component {
   render() {
@@ -16,11 +16,10 @@ class About extends React.Component {
           <h2>Paid on Upwork:</h2>
           <a href="https://www.upwork.com/services/my-list/1323160849474355200">
             <Button marginTop="10px">
-            You will get 5 hours of Terraform Training on AWS
+              You will get 5 hours of Terraform Training on AWS
             </Button>
           </a>
           Note: You need to have Upwork account.
-
         </p>
         <p>
           <h2>Free on YouTube:</h2>

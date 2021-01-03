@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-dark-mode`,
     `gatsby-remark-embed-video`,
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-netlify-cms`,
@@ -86,8 +87,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MYM Blog`,
-        short_name: `GatsbyJS`,
+        name: `MYM`,
+        short_name: `mhmdio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

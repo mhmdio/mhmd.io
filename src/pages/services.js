@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 class About extends React.Component {
   render() {
@@ -13,13 +13,12 @@ class About extends React.Component {
         <SEO title="Services" />
         <p>
           <h2>DevSecOps:</h2>
-            Using DevOps to Secure Your Infrastructure as Code   
+          Using DevOps to Secure Your Infrastructure as Code
         </p>
         <p>
           <h2>Training:</h2>
-            DevSecOps Training  
+          DevSecOps Training
         </p>
-
       </Layout>
     )
   }

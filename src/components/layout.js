@@ -78,15 +78,30 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(40),
+            maxWidth: rhythm(29),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            backgroundColor: 'var(--bg)',
+            color: 'var(--textNormal)',
+            transition: 'color 0.2s ease-out, background 0.2s ease-out',
+       
           }}
         >
           <header>{header}</header>
           <Nav />
           <main>{children}</main>
         </div>
-        <Footer>
+        <Footer
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(29),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            backgroundColor: 'var(--bg)',
+            color: 'var(--textNormal)',
+            transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        
+          }}
+        >
           © 2015 - {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>, Hosted on{" "}

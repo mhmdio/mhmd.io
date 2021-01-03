@@ -12,9 +12,9 @@ In this article I will show you **How to Install PowerCLI on CentOS**, with Some
 
 ## Tested on
 
-| OS         | Version |
-| ---------- | ------- |
-| CentOS     | 7       |
+| OS     | Version |
+| ------ | ------- |
+| CentOS | 7       |
 
 ## Export proxy settings
 

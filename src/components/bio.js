@@ -25,7 +25,7 @@ function Bio() {
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
-                marginRight: rhythm(1 / 2),
+                marginRight: rhythm(1 / 5),
                 marginBottom: 50,
                 minWidth: 50,
                 borderRadius: `10%`,
@@ -33,17 +33,12 @@ function Bio() {
               imgStyle={{
                 borderRadius: `10%`,
               }}
-            />
+            />            
+            👋 Salam people, I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
+            Palestine. I’m working on Developing Cloud Solutions and
+            Automation Projects using Pulumi, Terraform, Vault, Ansible and
+            other Open Source tools.
 
-        <p>
-          <h1>
-            Salam people{" "}
-          </h1>
-          👋 I’m Mohammed Yahya [Almusaddar][محمد يحيى المصدر], from Gaza,
-          Palestine. I’m working on Developing Cloud Solutions and Automation
-          Projects using Pulumi, Terraform, Vault, Ansible and other Open Source
-          tools.
-        </p>
           </Container>
         )
       }}
@@ -55,7 +50,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/mym.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 70, height: 70) {
           ...GatsbyImageSharpFixed
         }
       }

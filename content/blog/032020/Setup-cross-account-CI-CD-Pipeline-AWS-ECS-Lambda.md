@@ -44,7 +44,7 @@ Same approach will be followed for ECR, we will update it's resource based polic
 
 In Shared Service account update ECR Policy to allow access from dev, qa and prod accounts.
 
-```hcl
+```js
 variable "ecr_policy_identifiers" {
   description = "The policy identifiers for ECR policy."
   type        = list(string)
@@ -79,7 +79,7 @@ resource "aws_ecr_repository_policy" "this" {
 
 In Shared Service account update KMS Policy to allow access from dev, qa and prod accounts.
 
-```hcl
+```js
 variable "kms_policy_identifiers" {
   description = "The policy identifiers for kms policy."
   type        = list(string)
@@ -113,7 +113,7 @@ resource "aws_kms_key" "this" {
 
 In Shared Service account update S3 Policy to allow access from dev, qa and prod accounts, and make sure you are using the CMK KMS key you created with S3 bucket.
 
-```hcl
+```js
 
 variable "s3_policy_identifiers" {
   description = "The policy identifiers for s3 policy."
@@ -158,7 +158,7 @@ After we setup our resource based policies for S3, KMS and ECR, we need to allow
 
 You need to create cross account role in dev, qa and prod, and you need to add a policy to allow CodePipeline role to assume these roles.
 
-```hcl
+```js
 principal_arns = ["arn:aws:iam::SVC_ACCOUNT_ID:root"]
 
 data "aws_iam_policy_document" "assume" {
@@ -179,7 +179,7 @@ data "aws_iam_policy_document" "assume" {
 
 After that you can use these roles with CodePipeline in Shared Service account.
 
-```hcl
+```js
   stage {
     name = "Deploy-qa"
 

@@ -1,0 +1,17 @@
+body {
+  --bg: white;
+  --textNormal: black;
+  --textTitle: black;
+  --textLink: black;
+
+  background-color: var(--bg);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: black;
+  --textNormal: yellow;
+  --textTitle: yellow;
+  --textLink: yellow;
+}
