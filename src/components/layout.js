@@ -28,6 +28,17 @@ class Layout extends React.Component {
         >
           {title}
         </Link>
+        {" "}||
+        <Link
+          style={{
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
+          }}
+          to={`https://docs.mhmd.io`}
+        >
+        {" "}openDocs
+        </Link>
       </h1>
     )
     // if (location.pathname === rootPath || location.pathname === blogPath) {
@@ -78,6 +89,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
+            textAlign: `center`,
             maxWidth: rhythm(29),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             backgroundColor: "var(--bg)",
