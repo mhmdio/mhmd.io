@@ -28,8 +28,8 @@ class Layout extends React.Component {
           to={`/`}
         >
           {title}
-        </Link>
-        {" "}||
+        </Link>{" "}
+        ||
         <Link
           style={{
             boxShadow: `none`,
@@ -38,7 +38,20 @@ class Layout extends React.Component {
           }}
           to={`https://docs.mhmd.io`}
         >
-        {" "}openDocs
+          {" "}
+          openDocs
+        </Link>{" "}
+        ||
+        <Link
+          style={{
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
+          }}
+          to={`/rss`}
+        >
+          {" "}
+          IaC Feeds
         </Link>
       </h1>
     )

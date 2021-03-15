@@ -3,6 +3,7 @@ module.exports = {
     title: `mhmd.io`,
     author: `Mohammed Yahya`,
     description: `Mohammed Yahya Website.`,
+    summary: `Mohammed Yahya Website.`,
     siteUrl: `https://mhmd.io`,
     twitter: `mhmd_io`,
     social: {
@@ -13,14 +14,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-remark-embed-video`,
     `gatsby-remark-responsive-iframe`,
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
