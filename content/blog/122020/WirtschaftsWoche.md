@@ -4,7 +4,7 @@ date: 2020-12-12
 description: Awesome Team 🏎
 ---
 
-![alt text](./WirtschaftsWoche.jpeg)
+![WirtschaftsWoche](./WirtschaftsWoche.png)
 
 We all hear about the great revolution of modern algorithms aka “Artificial Intelligence” ahead. Still, we see most companies struggle leveraging the benefits of such technologies. Ginkgo Analytics supported Hapag-Lloyd on its journey to their first two productive AI solutions to improve customer service quality. Even more importantly, this left our client with a blueprint for how to get AI done, on which they now base their own AI center of excellence in Gdańsk.
 
